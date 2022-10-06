@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="./imagenes/logo-amazing-events.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body id="app">
+    <header class="header">
+
+        <div class="contenedor-barra-superior">
+            <a href="./index.html">
+                <img src="./imagenes/logo-amazing-events.png" alt="logo amazing events" class="logo">
+            </a>
+            <div class="nav-contenedor" id="nav-contenedor">
+                <a href="#" class="hamburger-menu-icon" id="hamb-menu-open" v-on:click="abrirMenu">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2 " width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg>
+                </a>
+                <nav class="navegacion" id="navegacion">
+
+
+                    <a href="./index.html" class="nav-link">Home</a>
+                    <a href="./upcoming-events.html" class="nav-link">Upcoming Events</a>
+                    <a href="./past-events.html" class="nav-link">Past Events</a>
+                    <a href="./contact.html" class="nav-link">Contact</a>
+                    <a href="./stats.html" class="nav-link">Stats</a>
+                    <a href="#" class="hamburger-menu-icon" id="hamb-menu-close" v-on:click="cerrarMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <path d="M10 10l4 4m0 -4l-4 4" />
+                          </svg>
+                    </a>
+
+                </nav>
+
+            </div>
+        </div>
+        <div class="header-barra-inferior">
+            <h1 class="titulo">Contact</h1>
+        </div>
+
+
+    </header>
+    <main>
+        <form action="./show_data.html" class="form-contact" method="get">
+            <label>
+        Name:
+        <input type="text" name="first-name">
+    </label>
+            <label>
+        Email:
+        <input type="email" name="email">
+    </label>
+            <label>
+        Message:
+        <textarea class="contact-textarea" name="comments" placeholder="Insert text here:"></textarea>
+    </label>
+            <input type="submit" value="submit" class="btn-ver-mas">
+        </form>
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="social-icons">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram social-icon instagram-icon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg></a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook social-icon facebook-icon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg></a>
+
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp social-icon whatsapp-icon" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+              </svg></a>
+
+
+
+        </div>
+
+        <p class="parrafo-footer">
+            Cohort 29
+        </p>
+
+    </footer>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="vueprueba.js"></script>
+
+</body>
+
+</html>
